@@ -63,9 +63,9 @@
   function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-    if(!audio) return; // stop the function from running all together
+    if(!audio) return; //stop the function from running
     key.classList.add('playing');
-    audio.currentTime = 0; // reset audio to play repeatedly 
+    audio.currentTime = 0; //reset audio to play repeatedly 
     audio.play();
   }
 
@@ -83,10 +83,17 @@ const keys = Array.from(document.querySelectorAll('.key'));
 </script>
 
  <script> 
-<!--Function here to record and replay audio-->
+//Function here to temperarily record audio, with fixed delays between key
+//Starts when record button pressed until stop pressed
   function recordAudio {
     let audioInput[]
     keys.forEach(audioInput => audioInput[])
+  
+//Function to replay audio 
+    function replayAudio {
+
+    }
+  
 
   }
 
